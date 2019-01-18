@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to html</h1>
+  </body>
+</html>
+
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+  {% block body_block %}
+    <h1>welcome to index</h1>
+    <h2>this is index.html page showing</h1>
+    <h1>{{ text|cut:'world' }}</h1>
+    <h1>{{ number|add:"99" }}</h1>
+  {% endblock %}
